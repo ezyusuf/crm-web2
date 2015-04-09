@@ -25,3 +25,15 @@ post '/contacts' do
   $rolodex.add_contact(new_contact)
   redirect to('/contacts')
 end
+
+# 7 HTTP RESTful Routes
+# GET /contacts - index
+# GET /contacts/:id - show
+
+# GET /contacts/:id/edit - edit
+# PUT /contacts/:id - update
+
+# GET /contacts/new - new
+# POST /contacts - create
+
+# DELETE /contacts/:id - delete

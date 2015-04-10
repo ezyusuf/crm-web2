@@ -15,9 +15,9 @@ header {
 
 nav {
   position: absolute;
-  top: 40px; /*CHANGE Y of nav*/
-  left: 500px; /*CHANGE X of nav*/
-  width:193px;
+  top: 43px; /*CHANGE Y of nav*/
+  left: 1050px; /*CHANGE X of nav*/
+  width:233px;
   /*border:1px solid red;*/
 }
 
@@ -32,14 +32,24 @@ li {
   text-decoration: none;
   display: inline-block;
   margin-left: 9px;
+  font-family: monospace;
 
 }
 
+#headerlogo {
+  padding-top: 25px;
+  padding-left: 535px;
+  font-size: 50px;
+/*  font-family: Edwardian Script ITC;*/
+  float:left;
+  color: white;
+  font-family: monospace;
+}
 
 .nav-links {
   text-decoration: none;
   color:white;
-  font-family: 'Roboto', sans-serif;
+  font-family: monospace;
   font-style:italic;
   font-size:18px;
 }
@@ -59,6 +69,9 @@ li {
   left:1090px; /*CHANGE X */
   width: 100px;
 }
+
+
+
 
 
 #footer {

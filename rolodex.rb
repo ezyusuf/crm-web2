@@ -27,6 +27,11 @@ class Rolodex
     end
   end
 
+
+  def remove_contact(contact)
+    @contacts.delete(contact)
+  end
+
   # def allfind
   #   @contacts
   # end

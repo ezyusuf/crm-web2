@@ -8,6 +8,7 @@ $rolodex= Rolodex.new
 @@rolodex = Rolodex.new
 
 @@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
+@@rolodex.add_contact(Contact.new("Jake", "Wild", "jake@bitmakerlabs.com", "Pianist"))
 
 get '/' do
   @crm_app_name = "My CRM"
@@ -30,8 +31,8 @@ post '/contacts' do
   redirect to('/contacts')
 end
 
-get "/contacts/1000" do
-  @contact = @@rolodex.find(1000)
+get "/contacts/:id" do
+  @contact = @@rolodex.find(params[:id].to_i)
   erb :show_contact
 end
 

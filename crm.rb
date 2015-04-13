@@ -7,9 +7,6 @@ $rolodex= Rolodex.new
 
 @@rolodex = Rolodex.new
 
-@@rolodex.add_contact(Contact.new("Johnny", "Bravo", "johnny@bitmakerlabs.com", "Rockstar"))
-@@rolodex.add_contact(Contact.new("Jake", "Wild", "jake@bitmakerlabs.com", "Pianist"))
-
 get '/' do
   @crm_app_name = "My CRM"
   erb :index

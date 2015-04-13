@@ -21,11 +21,11 @@ class Rolodex
     @id += 1
   end
 
-  # def find(contact_id)
-  #   @contacts.find do |contact|
-  #     contact.id == contact_id
-  #   end
-  # end
+  def find(contact_id)
+    @contacts.find do |contact|
+      contact.id == contact_id
+    end
+  end
 
   # def allfind
   #   @contacts

@@ -38,7 +38,15 @@ get "/contacts/:id" do
   else
     raise Sinatra::NotFound
   end
+end
 
+get "/contacts/:id/edit" do
+  @contact = @@rolodex.find(params[:id].to_i)
+  if @contact
+    erb :edit_contact
+  else
+    raise Sinatra::NotFound
+  end
 end
 
 # 7 HTTP RESTful Routes
